@@ -1,0 +1,18 @@
+{
+  "name": "shouldiuseatabpanel.github.io",
+  "version": "1.0.0",
+  "description": "Should I use a tab panel? This project hopes to answer that question.\r This project is currently very much under construction, but will be open to contributions from others once the initial build-out is complete.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "^3.0.0"
+  }
+}
