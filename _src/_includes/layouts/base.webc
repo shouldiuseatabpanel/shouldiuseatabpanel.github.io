@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title @raw="`${title} - ${site.sitename}`"></title>
+    </head>
+<body>
+<div id="skip-links">
+<a href="#main-heading">Skip to Content</a>
+&nbsp;<a href="#footer">Skip to Footer</a>
+</div>
+<header>
+<p @text="site.sitename"></p>
+</header>
+<main>
+<!---If front matter has h1, will use that value, otherwise uses title--->
+<h1 id="main-heading" tabindex="-1" @text="{if (h1) {h1} else {title}}"></h1>
+<template webc:nokeep @raw="content"></template>
+</main>
+<footer id="footer" tabindex="-1">
+<!---footer links todo--->
+<p>Powered by <a href="http://11ty.dev">Eleventy</a></p>
+</body>
+</html>
