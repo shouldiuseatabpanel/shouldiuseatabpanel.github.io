@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title @raw="`${title} - ${site.sitename}`"></title>
+<link rel="stylesheet" href="/css/style.css" type="text/css">
+		<link rel="stylesheet" :href="getBundleFileUrl('css')" webc:keep />
     </head>
 <body>
-<div id="skip-links">
+<div id="skip-links-container">
 <a href="#main-heading">Skip to Content</a>
-&nbsp;
-<a href="#footer">Skip to Footer</a>
 </div>
 <header>
 <h1 @text="site.sitename"></h1>
@@ -25,5 +25,7 @@
 <footer id="footer" tabindex="-1">
 <!---footer links todo--->
 <p>Powered by <a href="http://11ty.dev">Eleventy</a></p>
+</footer>
+		<script :src="getBundleFileUrl('js')" webc:keep></script>
 </body>
 </html>
