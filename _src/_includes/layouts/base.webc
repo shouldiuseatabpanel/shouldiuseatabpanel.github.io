@@ -8,10 +8,14 @@
 <body>
 <div id="skip-links">
 <a href="#main-heading">Skip to Content</a>
-&nbsp;<a href="#footer">Skip to Footer</a>
+&nbsp;
+<a href="#footer">Skip to Footer</a>
 </div>
 <header>
-<p @text="site.sitename"></p>
+<h1 @text="site.sitename"></h1>
+<nav
+	@html="eleventyNavigationToHtml(eleventyNavigation($data.collections.all))"
+></nav>
 </header>
 <main>
 <!---If front matter has h1, will use that value, otherwise uses title--->
