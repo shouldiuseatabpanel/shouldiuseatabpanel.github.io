@@ -1,0 +1,8 @@
+<div webc:if="{index == 1}" role="tabpanel" :aria-labelledby="'tabpanel-heading-' + index" :id="'tabpanel-' + index">
+<h2 tabindex="0" :id="'tabpanel-heading-' + index" @text="label"></h2>
+<slot></slot>
+</div>
+<div webc:else role="tabpanel" :aria-labelledby="'tabpanel-heading-' + index" class="is-hidden" :id="'tabpanel-' + index">
+<h2 tabindex="0" :id="'tabpanel-heading-' + index" @text="label"></h2>
+<slot></slot>
+</div>

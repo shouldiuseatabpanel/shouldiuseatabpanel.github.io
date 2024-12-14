@@ -1,0 +1,3 @@
+<div role="tablist" aria-labelledby="main-heading" class="automatic">
+<slot></slot>
+</div>
