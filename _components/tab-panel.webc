@@ -1,4 +1,4 @@
 <div role="tabpanel" :aria-labelledby="uid" :id="`tabpanel-${index}`" tabindex="0" :class="if _(index != 0) {'is-hidden'}">
-<h2 :id="uid" @text="heading"></h2>
+<h2 :id="uid" @text="label"></h2>
 <slot></slot>
 </div>
