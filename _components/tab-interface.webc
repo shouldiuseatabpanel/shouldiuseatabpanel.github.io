@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="/css/tabs.css" type="text/css">
 <div class="tabs">
 <div role="tablist" class="automatic" aria-labelledby="main-heading">
-<tab-btn></tab-btn>
+<tab-btn webc:for="(item, index) in tabs" :label="item" :index="index"></tab-btn>
 </div>
 <slot></slot>
 </div>
