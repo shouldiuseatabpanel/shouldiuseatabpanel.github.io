@@ -1,13 +1,6 @@
-    <script webc:type="js" webc:root>
-var output ='';
-output += `<button id="tab-${index} role="tab" aria-controls="tabpanel-${index}" `;
-if (index == 0) {
-    output += `aria-selected="true">`;
-} else {
-    output += ` aria-selected="false" tabindex="-1">`;
-}
-
-output
-</script>
+<button webc:if="{index == 1}" type="button" role="tab" :id="'tab-' + index" aria-selected="true" :aria-controls="'tabpanel-' + index">
+<span class="focus" @text="label"></span>
+</button>
+<button webc:else :id="'tab-' + index" role="tab" type="button" tabindex="-1" aria-selected="false" :aria-controls="'tabpanel-' + index">
 <span class="focus" @text="label"></span>
 </button>
