@@ -3,8 +3,7 @@
 <!---slot will be where tab panels go--->
 <link rel="stylesheet" href="/css/tabs.css" type="text/css">
 <div class="tabs">
-<!---heading todo--->
-<div role="tablist" class="automatic" :aria-labelledby="uid">
+<div role="tablist" class="automatic" aria-labelledby="main-heading">
 <tab-btn></tab-btn>
 </div>
 <slot></slot>
