@@ -1,4 +1,18 @@
-<div role="tabpanel" :aria-labelledby="uid" :id="`tabpanel-${index}`" tabindex="0" :class="if _(index != 0) {'is-hidden'}">
+<script webc:type="js" webc:root>
+var output = '';
+if (!label) {
+    throw new Error('tab panel component missing required prop label');
+}
+if (!index) {
+    throw new Error('tab panel component missing required prop index');
+}
+output += '<div role="tabpanel" tabindex="0" id="tabpanel-${index}"`;
+if (index != 0) {
+    output += ` class="is-hidden"`;
+}
+output += `>`;
+output
+</script>
 <h2 :id="uid" @text="label"></h2>
 <slot></slot>
 </div>
