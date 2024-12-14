@@ -1,0 +1,12 @@
+<!---overall wrapper for tab interface--->
+<!---Uses the aria apg pattern for automatic tab interfaces--->
+<!---slot will be where tab panels go--->
+<link rel="stylesheet" href="/css/tabs.css" type="text/css">
+<div class="tabs">
+<!---heading todo--->
+<div role="tablist" class="automatic" :aria-labelledby="uid">
+<tab-btn></tab-btn>
+</div>
+<slot></slot>
+</div>
+<script src="/js/tabs-automatic.js"></script>
