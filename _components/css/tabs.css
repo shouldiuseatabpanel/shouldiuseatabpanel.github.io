@@ -1,7 +1,5 @@
 [role="tablist"] {
   width: 100%;
-  display: flex;
-  align-items: flex-end;
 }
 [role="tab"] {
   padding: 4px;
@@ -12,14 +10,12 @@
   font-size: 1rem;
   cursor: pointer;
   font-family: var(--sans);
+  margin-top: 4px;
 }
-
 [role="tab"][aria-selected="true"] {
   padding-bottom: 8px;
   font-weight: bold;
 }
-
-
 
 
 [role="tabpanel"] {
@@ -27,7 +23,6 @@
   padding: 4px;
   width: 100%;
 }
-
 [role="tabpanel"].is-hidden {
   display: none;
 }
