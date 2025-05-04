@@ -1,21 +1,17 @@
-.tabs {
-  font-family: var(--sans);
-}
 [role="tablist"] {
   width: 100%;
   display: flex;
   align-items: flex-end;
 }
-
 [role="tab"] {
   padding: 4px;
   border: 1px solid var(--blue);
-  border-bottom: 2px solid var(--blue);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;;
   background: var(-white);
   font-size: 1rem;
   cursor: pointer;
+  font-family: var(--sans);
 }
 
 [role="tab"][aria-selected="true"] {
