@@ -26,3 +26,7 @@ a, a:active, a:visited, a:focus, a:hover {
 h1, h2, h3, h4, h5, h6 {
     color: var(--blue);
 }
+:focus-visible {
+    outline: 6px double (var(--blue));
+    box-shadow: 0 4px var(--white);;
+}
