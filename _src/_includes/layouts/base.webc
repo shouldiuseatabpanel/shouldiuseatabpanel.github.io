@@ -14,7 +14,7 @@
 <header>
 <h1 @text="site.sitename"></h1>
 <template webc:type="11ty" 11ty:type="njk">
-<nav aria-label="footer">
+<nav aria-label="header">
 <p role="list" id="header-nav-list">
 {% set navPages = collections.all | eleventyNavigation %}
 {%- for entry in navPages %}
