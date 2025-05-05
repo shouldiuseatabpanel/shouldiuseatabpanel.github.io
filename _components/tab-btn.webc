@@ -3,9 +3,5 @@ if (!index) {throw new Error('tab button missing required index prop')};
 if (!label) {throw new Error('tab button missing required label prop')};
 ''
 </script>
-<button webc:if="{index == 1}" type="button" role="tab" :id="'tab-' + index" aria-selected="true" :aria-controls="'tabpanel-' + index">
-<span class="focus" @text="label"></span>
-</button>
-<button webc:else :id="'tab-' + index" role="tab" type="button" tabindex="-1" aria-selected="false" :aria-controls="'tabpanel-' + index">
-<span class="focus" @text="label"></span>
-</button>
+<button webc:if="{index == 1}" type="button" role="tab" :id="'tab-' + index" aria-selected="true" :aria-controls="'tabpanel-' + index" @text="label"></button>
+<button webc:else :id="'tab-' + index" role="tab" type="button" tabindex="-1" aria-selected="false" :aria-controls="'tabpanel-' + index" @text="label"></button>
