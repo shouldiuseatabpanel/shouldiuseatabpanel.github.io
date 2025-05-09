@@ -4,7 +4,13 @@
     --textcolor: #222222;
     --highlight: #00247d;
 }
-
+@media (prefers-color-scheme: dark) {
+    ::root {
+--backgroundcolor: #00247d;
+--highlightcolor: #ffffff;
+--textcolor: #ffffff;
+    }
+}
 .sr-only, #skip-links-container:not(:focus-within) {
     position: absolute;
     left:  -10000px;
