@@ -37,7 +37,7 @@
 </header>
 <main id="main" tabindex="-1">
 <!---If front matter has h1, will use that value, otherwise uses title--->
-<h1 webc:if"!h1exclude" @text="{if (h1) {h1} else {title}}"></h1>
+<h1 webc:if="!h1exclude" @text="{if (h1) {h1} else {title}}"></h1>
 <template webc:nokeep @raw="content"></template>
 </main>
 <footer>

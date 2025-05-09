@@ -13,12 +13,23 @@ eleventyNavigation:
 <tab-btn @index="3" @label="Test tab 3"></tab-btn>
 </tab-list>
 <tab-panel @index="1" @label="Short answer">
+<template webc:type="11ty" 11ty:type="md">
 No!
+</template>
 </tab-panel>
 <tab-panel @index="2" @label="Slightly longer answer">
+<template webc:type="11ty" 11ty:type="md">
 Hell no!
+</template>
 </tab-panel>
 <tab-panel @index="3" @label="Test tab 3">
-Test tab 3
+<template webc:type="11ty" 11ty:type="md">
+Testing a few things
+
+- List item 1
+- List item 2
+
+This is a [link](https://www.google.com/)
+</template>
 </tab-panel>
 </tab-interface>
