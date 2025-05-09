@@ -8,10 +8,11 @@
 }
 [role="tab"] {
   padding: 4px;
-  border: 1px solid var(--blue);
+  border: 1px solid var(--highlight);
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;;
-  background: var(-white);
+  color: var(--highlight);
+  background-color: var(--backgroundcolor);
   font-size: 1rem;
   cursor: pointer;
   font-family: var(--sans);
@@ -20,7 +21,7 @@
   padding-bottom: 8px;
 }
 [role="tabpanel"] {
-  border: 2px solid var(--blue);
+  border: 2px solid var(--highlight);
   padding: 4px;
   width: 100%;
 }
