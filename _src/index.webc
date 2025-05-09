@@ -1,6 +1,6 @@
 ---
 title: Home
-h1: Should I Use a Tab Panel?
+h1exclude: true
 layout: layouts/base.webc
 eleventyNavigation:
     key: Home
