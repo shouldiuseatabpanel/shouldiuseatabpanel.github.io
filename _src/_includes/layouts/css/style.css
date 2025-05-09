@@ -7,7 +7,7 @@
 @media (prefers-color-scheme: dark) {
     ::root {
 --backgroundcolor: #00247d;
---highlightcolor: #ffffff;
+--highlight: #ffffff;
 --textcolor: #ffffff;
     }
 }
