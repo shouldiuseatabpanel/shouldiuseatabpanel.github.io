@@ -1,8 +1,8 @@
 :root {
     --sans: Verdana, Arial, sans-serif;
-    --white: #ffffff;
-    --black: #222222;
-    --blue: #00247d;
+    --backgroundcolor: #ffffff;
+    --textcolor: #222222;
+    --highlight: #00247d;
 }
 
 .sr-only, #skip-links-container:not(:focus-within) {
@@ -15,18 +15,18 @@
 }
 
 body {
-    color: var(--black);
+    color: var(--textcolor);
     font-family: var(--sans);
     font-size: 16px;
-    background-color: var(--white)
+    background-color: var(--backgroundcolor)
 }
 a, a:active, a:visited, a:focus, a:hover {
-    color: var(--blue);
+    color: var(--highlight);
 }
 h1, h2, h3, h4, h5, h6 {
-    color: var(--blue);
+    color: var(--highlight);
 }
 :focus-visible {
-    outline: 6px double (var(--blue));
-    box-shadow: 0 4px var(--white);;
+    outline: 6px double (var(--highlight));
+    box-shadow: 0 4px var(--backgroundcolor);;
 }
