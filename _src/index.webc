@@ -4,7 +4,7 @@ h1exclude: true
 layout: layouts/base.webc
 eleventyNavigation:
     key: Home
-    Order: 1
+    order: 1
 ---
 <tab-interface>
 <tab-list>
