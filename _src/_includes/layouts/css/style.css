@@ -5,10 +5,10 @@
     --highlight: #00247d;
 }
 @media (prefers-color-scheme: dark) {
-    ::root {
---backgroundcolor: #00247d;
---highlight: #ffffff;
---textcolor: #ffffff;
+    :root {
+        --backgroundcolor: #00247d;
+        --textcolor: #ffffff;
+        --highlight: #ffffff;
     }
 }
 .sr-only, #skip-links-container:not(:focus-within) {
