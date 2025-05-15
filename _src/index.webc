@@ -10,7 +10,7 @@ eleventyNavigation:
 <tab-list>
 <tab-btn @label="Short answer" @index="1"></tab-btn>
 <tab-btn @label="Slightly longer answer" @index="2"></tab-btn>
-<tab-btn @index="3" @label="Test tab 3"></tab-btn>
+<tab-btn @index="3" @label="More to come"></tab-btn>
 </tab-list>
 <tab-panel @index="1" @label="Short answer">
 <template webc:type="11ty" 11ty:type="md">
@@ -22,14 +22,8 @@ No!
 Hell no!
 </template>
 </tab-panel>
-<tab-panel @index="3" @label="Test tab 3">
+<tab-panel @index="3" @label="More to come">
 <template webc:type="11ty" 11ty:type="md">
-Testing a few things
-
-- List item 1
-- List item 2
-
-This is a [link](https://www.google.com/)
-</template>
+This site is a work in progress and will be added to. Check back later for more.</template>
 </tab-panel>
 </tab-interface>
