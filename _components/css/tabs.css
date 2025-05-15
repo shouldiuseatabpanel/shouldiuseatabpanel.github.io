@@ -10,15 +10,19 @@
   padding: 4px;
   border: 1px solid var(--highlight);
   border-top-left-radius: 4px;
-  border-top-right-radius: 4px;;
+  border-top-right-radius: 4px;
   color: var(--highlight);
   background-color: var(--backgroundcolor);
   font-size: 1rem;
   cursor: pointer;
   font-family: var(--sans);
+  outline: none;
 }
 [role="tab"][aria-selected="true"] {
   padding-bottom: 8px;
+}
+[role="tab"]:focus-visible .focus {
+  text-decoration: underline;
 }
 [role="tabpanel"] {
   border: 2px solid var(--highlight);
