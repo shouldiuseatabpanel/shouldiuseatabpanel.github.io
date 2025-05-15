@@ -16,10 +16,13 @@
   font-size: 1rem;
   cursor: pointer;
   font-family: var(--sans);
-  outline: none;
 }
 [role="tab"][aria-selected="true"] {
   padding-bottom: 8px;
+}
+[role="tab"]:focus-visible{
+  outline: none;
+  box-shadow: none;
 }
 [role="tab"]:focus-visible .focus {
   text-decoration: underline;
