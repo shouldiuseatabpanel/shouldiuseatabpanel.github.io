@@ -6,4 +6,4 @@ eleventyNavigation:
     key: Contributing
     order: 2
 ---
-todo
+Info coming soon.

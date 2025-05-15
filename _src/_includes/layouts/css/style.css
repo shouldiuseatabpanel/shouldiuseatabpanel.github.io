@@ -19,7 +19,6 @@
     height: 1px;
     overflow: hidden;
 }
-
 body {
     color: var(--textcolor);
     font-family: var(--sans);
@@ -35,4 +34,14 @@ h1, h2, h3, h4, h5, h6 {
 :focus-visible {
     outline: 6px double var(--highlight);
     box-shadow: 0 4px var(--backgroundcolor);
+}
+.page-title {
+    color : var(--highlight);
+    font-size: 2rem;;
+}
+header, footer {
+    text-align: center;
+}
+header nav [aria-current], footer nav [aria-current] {
+    font-weight: bold;
 }
