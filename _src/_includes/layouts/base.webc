@@ -12,7 +12,7 @@
 <a href="#main">Skip to Content</a>
 </div>
 <header>
-<h1 @text="site.sitename"></h1>
+<p class="page-title" @text="site.sitename"></p>
 <template webc:type="11ty" 11ty:type="njk">
 <nav aria-label="header">
 <p role="list" id="header-nav-list">
