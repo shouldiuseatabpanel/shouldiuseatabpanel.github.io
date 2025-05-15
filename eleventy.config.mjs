@@ -8,7 +8,7 @@ export default function(eleventyConfig) {
     eleventyConfig.addPlugin(eleventyNavigationPlugin);
     eleventyConfig.addPlugin(EleventyRenderPlugin);
     eleventyConfig.addPlugin(IdAttributePlugin, {
-        selector: "h2,h3,h4,h5,h6"
+        selector: "h1, h2,h3,h4,h5,h6"
     });
     let options = {
 		html: true,
