@@ -45,3 +45,15 @@ header, footer {
 footer nav [aria-current] {
     font-weight: bold;
 }
+/*desktop responsive*/
+@media (min-width: 64rem) {
+#wrapper{
+    display: flex;
+}
+main {
+    flex-grow: 1    ;
+}
+# wrapper nav, main {
+    padding: 8px;   
+}
+}
