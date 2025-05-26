@@ -42,6 +42,18 @@ h1, h2, h3, h4, h5, h6 {
 header, footer {
     text-align: center;
 }
-header nav [aria-current], footer nav [aria-current] {
+footer nav [aria-current] {
     font-weight: bold;
+}
+/*desktop responsive*/
+@media (min-width: 64rem) {
+#wrapper{
+    display: flex;
+}
+main {
+    flex-grow: 1    ;
+}
+#wrapper nav, main {
+    padding: 8px;   
+}
 }
