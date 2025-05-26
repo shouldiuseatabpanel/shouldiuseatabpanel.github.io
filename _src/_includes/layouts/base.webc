@@ -14,8 +14,9 @@
 <header>
 <p class="page-title" @text="site.sitename"></p>
 </header>
+<!---wrapper div serves as flex container for desktop view--->
 <div id="wrapper">
-<nav aria-label="main">
+<nav aria-label="primary">
 <nav-main>
 <ul class="nav-links" role="list">
 <template webc:type="11ty" 11ty:type="njk">
@@ -33,7 +34,6 @@
 {%- endfor %}
 </template>
 </ul>
-
 </nav-main>
 </nav>
 <main id="main" tabindex="-1">
