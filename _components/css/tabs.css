@@ -1,11 +1,5 @@
 .tabs {
-  width: 100%;
   display: block;
-}
-[role="tablist"] {
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
 }
 [role="tab"] {
   padding: 4px;
@@ -16,6 +10,10 @@
   font-size: 1rem;
   cursor: pointer;
   font-family: var(--sans);
+  margin: 0 ;
+}
+[role="tab"]:not([aria-selected="true"]) {
+  margin-top: 4px;
 }
 [role="tab"][aria-selected="true"] {
   padding-bottom: 8px;
