@@ -13,33 +13,17 @@
 </div>
 <header>
 <p class="page-title" @text="site.sitename"></p>
-<template webc:type="11ty" 11ty:type="njk">
-<nav aria-label="header">
-<p role="list" id="header-nav-list">
-{% set navPages = collections.all | eleventyNavigation %}
-{%- for entry in navPages %}
-<span role="listitem" class="header-nav-list-item"{%- if entry.url == page.url %} aria-current="page"{% endif %}>
-{%- if entry.url != page.url %}
-<a href="{{ entry.url }}">
-{% endif %}
-{{ entry.title }}
-{%- if entry.url != page.url %}
-</a>
-{% endif %}
-{%- if (loop.index <= navPages | length - 1) %}
-<span class="header-nav-list-item-separator" aria-hidden="true"> | </span>
-{% endif %}
-</span>
-{%- endfor %}
-</p>
-</nav>
-</template>
 </header>
+<div id="wrapper">
+<nav aria-label="main">
+
+</nav>
 <main id="main" tabindex="-1">
 <!---If front matter has h1, will use that value, otherwise uses title--->
 <h1 webc:if="!h1exclude" @text="{if (h1) {h1} else {title}}"></h1>
 <template webc:nokeep @raw="content"></template>
 </main>
+</div>
 <footer>
 <template webc:type="11ty" 11ty:type="njk">
 <nav aria-label="footer">
