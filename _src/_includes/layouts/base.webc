@@ -16,7 +16,25 @@
 </header>
 <div id="wrapper">
 <nav aria-label="main">
+<nav-main>
+<ul class="nav-links" role="list">
+<template webc:type="11ty" 11ty:type="njk">
+{% set navPages = collections.all | eleventyNavigation %}
+{%- for entry in navPages %}
+<li class="nav-links-item"{%- if entry.url == page.url %} aria-current="page"{% endif %}>
+{%- if entry.url != page.url %}
+<a href="{{ entry.url }}">
+{% endif %}
+{{ entry.title }}
+{%- if entry.url != page.url %}
+</a>
+{% endif %}
+</li>
+{%- endfor %}
+</template>
+</ul>
 
+</nav-main>
 </nav>
 <main id="main" tabindex="-1">
 <!---If front matter has h1, will use that value, otherwise uses title--->
