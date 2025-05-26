@@ -53,7 +53,7 @@ footer nav [aria-current] {
 main {
     flex-grow: 1    ;
 }
-# wrapper nav, main {
+#wrapper nav, main {
     padding: 8px;   
 }
 }
