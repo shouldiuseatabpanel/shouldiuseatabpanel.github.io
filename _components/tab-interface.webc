@@ -1,8 +1,5 @@
-<!---overall wrapper for tab interface--->
-<!---Uses the aria apg pattern for automatic tab interfaces--->
-<!---slot will be where tab panels go--->
 <link rel="stylesheet" href="/css/tabs.css" type="text/css">
-<div class="tabs">
+<div webc:root class="tabs">
 <slot></slot>
 </div>
 <script src="/js/tabs-automatic.js"></script>
