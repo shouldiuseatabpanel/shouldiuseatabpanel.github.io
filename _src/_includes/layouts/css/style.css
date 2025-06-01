@@ -33,7 +33,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 :focus-visible {
     outline: 6px double var(--highlight);
-    box-shadow: 0 4px var(--backgroundcolor);
+    box-shadow: 0 0 0 5px var(--backgroundcolor);
 }
 .page-title {
     color : var(--highlight);
