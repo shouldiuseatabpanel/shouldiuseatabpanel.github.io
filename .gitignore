@@ -1,6 +1,0 @@
-node_modules
-_site
-.DS_Store
-        _src/.DS_Store
-        _src/_includes/.DS_Store
-        _src/_includes/layouts/.DS_Store

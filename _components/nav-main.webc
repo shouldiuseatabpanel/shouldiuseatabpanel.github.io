@@ -1,8 +1,0 @@
-<link rel="stylesheet" href="/css/nav-main.css">
-<details id="nav-mobile">
-<summary id="nav-btn">Navigation</summary>
-<slot></slot>
-</details>
-<div id="nav-desktop">
-<slot></slot>
-</div>

@@ -1,5 +1,0 @@
-<link rel="stylesheet" href="/css/tabs.css" type="text/css">
-<div webc:root class="tabs">
-<slot></slot>
-</div>
-<script src="/js/tabs-automatic.js"></script>

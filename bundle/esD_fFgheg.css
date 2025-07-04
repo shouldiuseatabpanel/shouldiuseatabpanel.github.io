@@ -1,0 +1,132 @@
+.tabs {
+  display: block;
+}
+[role="tab"] {
+  padding: 4px;
+  border: 1px solid var(--highlight);
+  border-radius: 4px 4px 0 0;
+  color: var(--highlight);
+  background-color: var(--backgroundcolor);
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: var(--sans);
+  margin: 0 ;
+}
+[role="tab"]:not([aria-selected="true"]) {
+  margin-top: 4px;
+}
+[role="tab"][aria-selected="true"] {
+  padding-bottom: 8px;
+}
+[role="tab"]:focus-visible{
+  outline: none;
+  box-shadow: none;
+}
+[role="tab"]:focus-visible .focus {
+  text-decoration: underline;
+}
+[role="tabpanel"] {
+  border: 1px solid var(--highlight);
+  padding: 5px;
+  width: 100%;
+}
+[role="tabpanel"].is-hidden {
+  display: none;
+}
+.nav-links {
+    list-style-type: none;
+}
+.nav-links-item[aria-current] {
+    font-weight: bold;
+}
+#nav-btn {
+    font-family: var(--sans);
+    font-size: 1rem;
+    color: var(--highlight);
+    background-color: var(--backgroundcolor);
+    border-radius: 5px;
+    border: 1px solid var(--highlight);
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+#nav-btn::marker {
+    color: var(--highlight);
+}
+#nav-desktop, #nav-mobile {
+    margin: 0   ;
+    padding: 0  ;
+    border: 0   ;
+}
+/* small and medium*/
+@media (max-width: 63.99999rem) {
+    #nav-desktop {
+        display: none;
+    }
+}
+/*large*/
+@media (min-width: 64rem) {
+#nav-mobile {
+    display: none;
+}
+}
+:root {
+    --sans: Verdana, Arial, sans-serif;
+    --backgroundcolor: #ffffff;
+    --textcolor: #222222;
+    --highlight: #00247d;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundcolor: #00247d;
+        --textcolor: #ffffff;
+        --highlight: #ffffff;
+    }
+}
+.sr-only, #skip-links-container:not(:focus-within) {
+    position: absolute;
+    left:  -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+body {
+    color: var(--textcolor);
+    font-family: var(--sans);
+    font-size: 16px;
+    background-color: var(--backgroundcolor)
+}
+a, a:active, a:visited, a:focus, a:hover {
+    color: var(--highlight);
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight);
+}
+:focus-visible {
+    outline: 6px double var(--highlight);
+    box-shadow: 0 0 0 5px var(--backgroundcolor);
+}
+.page-title {
+    color : var(--highlight);
+    font-size: 2rem;;
+}
+header, footer {
+    text-align: center;
+}
+footer nav [aria-current] {
+    font-weight: bold;
+}
+/*desktop responsive*/
+@media (min-width: 64rem) {
+#wrapper{
+    display: flex;
+}
+main {
+    flex-grow: 1    ;
+}
+#wrapper nav, main {
+    padding: 8px;   
+}
+}
