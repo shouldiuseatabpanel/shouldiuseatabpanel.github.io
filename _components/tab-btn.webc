@@ -3,4 +3,4 @@ if (!index) {throw new Error('tab button missing required index prop')};
 if (!label) {throw new Error('tab button missing required label prop')};
 ''
 </script>
-<button  type="button" role="tab" :id="'tab-' + index" :aria-selected="if (index != 1) {undefined} else {'true'}" :aria-controls="'tabpanel-' + index"><span class="focus"  @text="label"></span></button>
+<button  type="button" role="tab" :id="'tab-' + index" :aria-selected="if (index != 1) {'false'} else {'true'}" :aria-controls="'tabpanel-' + index"><span class="focus"  @text="label"></span></button>
