@@ -2,7 +2,7 @@
   display: block;
 }
 :host [role="tablist"] {
-  margin: 0 4px;
+  margin: 0 6px;
 }
 :host [role="tab"] {
   box-sizing: border-box;
