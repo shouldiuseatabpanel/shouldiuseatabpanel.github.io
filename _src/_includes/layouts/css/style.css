@@ -28,6 +28,13 @@ body {
 a, a:active, a:visited, a:focus, a:hover {
     color: var(--highlight);
 }
+button {
+    color: var(--textcolor);
+    border: 2px solid var(--highlight);
+    padding: 1px 4px;
+    border-radius: 4px;
+    min-height: 24px;
+}
 h1, h2, h3, h4, h5, h6 {
     color: var(--highlight);
 }
@@ -37,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-title {
     color : var(--highlight);
-    font-size: 2rem;;
+    font-size: 2rem;
 }
 header, footer {
     text-align: center;
