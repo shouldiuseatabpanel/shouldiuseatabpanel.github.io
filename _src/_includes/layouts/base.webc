@@ -12,7 +12,7 @@
 <header>
 <p class="page-title" @text="site.sitename"></p>
 </header>
-<main>>
+<main>
 <!---If front matter has h1, will use that value, otherwise uses title--->
 <h1 webc:if="!h1exclude" @text="{if (h1) {h1} else {title}}"></h1>
 <template webc:nokeep @raw="content"></template>

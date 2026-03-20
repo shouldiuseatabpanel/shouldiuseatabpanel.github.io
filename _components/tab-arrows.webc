@@ -1,0 +1,11 @@
+<link webc:scoped rel="stylesheet" href="/css/tab-arrows.css" type="text/css">
+<button role="button" data-pn="p">
+<span aria-hidden="true">&larr;</span>
+<span class="sr-only">Previous tab</span>
+</button>
+<div class="spacer"></div>
+<button type="button" data-pn="n">
+<span aria-hidden="true">&rarr;</span>
+<span class="sr-only">Next tab</span>
+</button>
+<script src="/js/tab-arrows.js"></script>
