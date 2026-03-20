@@ -29,7 +29,10 @@ a, a:active, a:visited, a:focus, a:hover {
     color: var(--highlight);
 }
 button {
+    box-sizing: border-box;
     color: var(--textcolor);
+    font-family: var(--sans);
+    font-size: 1rem;
     border: 2px solid var(--highlight);
     padding: 1px 4px;
     border-radius: 4px;
