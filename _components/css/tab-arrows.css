@@ -1,0 +1,7 @@
+:host {
+    display: flex;
+    margin: 6px 0;
+}
+:host .spacer {
+    flex: 1;
+}

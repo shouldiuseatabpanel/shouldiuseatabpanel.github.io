@@ -28,6 +28,16 @@ body {
 a, a:active, a:visited, a:focus, a:hover {
     color: var(--highlight);
 }
+button {
+    box-sizing: border-box;
+    color: var(--textcolor);
+    font-family: var(--sans);
+    font-size: 1rem;
+    border: 2px solid var(--highlight);
+    padding: 1px 4px;
+    border-radius: 4px;
+    min-height: 24px;
+}
 h1, h2, h3, h4, h5, h6 {
     color: var(--highlight);
 }
@@ -37,23 +47,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 .page-title {
     color : var(--highlight);
-    font-size: 2rem;;
+    font-size: 2rem;
 }
 header, footer {
     text-align: center;
 }
+footer {
+    font-size: smaller;
+}
 footer nav [aria-current] {
     font-weight: bold;
-}
-/*desktop responsive*/
-@media (min-width: 64rem) {
-#wrapper{
-    display: flex;
-}
-main {
-    flex-grow: 1    ;
-}
-#wrapper nav, main {
-    padding: 8px;   
-}
 }

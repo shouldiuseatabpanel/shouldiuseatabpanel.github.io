@@ -1,5 +1,6 @@
 <link webc:scoped rel="stylesheet" href="/css/tabs.css" type="text/css">
-<div class="tabs">
+<div webc:root class="tabs">
 <slot></slot>
+<tab-arrows></tab-arrows>
 </div>
 <script src="/js/tabs-automatic.js"></script>
