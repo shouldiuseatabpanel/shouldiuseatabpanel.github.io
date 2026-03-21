@@ -52,6 +52,9 @@ h1, h2, h3, h4, h5, h6 {
 header, footer {
     text-align: center;
 }
+footer {
+    font-size: smaller;
+}
 footer nav [aria-current] {
     font-weight: bold;
 }
