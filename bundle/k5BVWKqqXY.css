@@ -1,0 +1,60 @@
+.wrhc0ppre{display:flex;margin:6px 0}.wrhc0ppre .spacer{flex:1}.wrhc0ppre [data-pn]{padding:0;border:0;color:var(--highlight);min-height:unset}
+.wxuvr_nlz{display:block}.wxuvr_nlz [role="tablist"]{margin:0 6px}.wxuvr_nlz [role="tab"]{border-bottom-left-radius:0;border-bottom-right-radius:0;cursor:pointer}.wxuvr_nlz [role="tab"][aria-selected="true"]{font-weight:bold}.wxuvr_nlz [role="tab"][aria-selected="false"]{border-color:var(--secondary)}.wxuvr_nlz [role="tab"]:focus-visible{outline:none;box-shadow:none}.wxuvr_nlz [role="tab"]:focus-visible .focus{text-decoration:underline}.wxuvr_nlz [role="tabpanel"]{border:1px solid var(--highlight);padding:4px;width:100%;border-radius:4px}.wxuvr_nlz [role="tabpanel"].is-hidden{display:none}
+:root {
+    color-scheme: light dark;
+    --sans: Verdana, Arial, sans-serif;
+    --backgroundcolor: #ffffff;
+    --textcolor: #222222;--seconary: #666666;
+    --highlight: #995500;
+    --secondary: #666666;
+}
+@media (prefers-color-scheme: dark) {
+    :root {
+        --backgroundcolor: #111111;
+        --textcolor: #ffffff;
+        --highlight: #ff9900;
+        --secondary: #999999;
+    }
+}
+.sr-only, #skip-links-container:not(:focus-within) {
+    position: absolute;
+    left:  -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+body {
+    color: var(--textcolor);
+    font-family: var(--sans);
+    background-color: var(--backgroundcolor)
+}
+:any-link {
+    color: var(--highlight);
+}
+button {
+    box-sizing: border-box;
+    color: var(--textcolor);
+    font-family: var(--sans);
+    font-size: 1rem;
+    border: 1px solid var(--highlight);
+    padding: 2px;
+    border-radius: 4px;
+    min-height: 24px;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: var(--highlight);
+}
+:focus-visible {
+    outline: 6px double var(--highlight);
+    box-shadow: 0 0 0 5px var(--backgroundcolor);
+}
+header, footer {
+    text-align: center;
+}
+footer {
+    font-size: smaller;
+}
+footer nav [aria-current] {
+    font-weight: bold;
+}
