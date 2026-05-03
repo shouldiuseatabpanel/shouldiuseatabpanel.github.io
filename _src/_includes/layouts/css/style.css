@@ -1,15 +1,17 @@
 :root {
-    color-scheme: light dark;;
+    color-scheme: light dark;
     --sans: Verdana, Arial, sans-serif;
     --backgroundcolor: #ffffff;
-    --textcolor: #222222;
-    --highlight: #00247d;
+    --textcolor: #222222;--seconary: #666666;
+    --highlight: #995500;
+    --secondary: #666666;
 }
 @media (prefers-color-scheme: dark) {
     :root {
-        --backgroundcolor: #00247d;
+        --backgroundcolor: #111111;
         --textcolor: #ffffff;
-        --highlight: #ffffff;
+        --highlight: #ff9900;
+        --secondary: #999999;
     }
 }
 .sr-only, #skip-links-container:not(:focus-within) {
