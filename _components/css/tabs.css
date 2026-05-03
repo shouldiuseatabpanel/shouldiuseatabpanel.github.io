@@ -7,12 +7,13 @@
 :host [role="tab"] {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  padding-bottom: 3px;
-  border-bottom: 0;
   cursor: pointer;
 }
 :host [role="tab"][aria-selected="true"] {
   font-weight: bold;
+}
+:host [role="tab"][aria-selected="false"] {
+  border-color: var(--secondary);
 }
 :host [role="tab"]:focus-visible{
   outline: none;
@@ -22,7 +23,7 @@
   text-decoration: underline;
 }
 :host [role="tabpanel"] {
-  border: 2px solid var(--highlight);
+  border: 1px solid var(--highlight);
   padding: 4px;
   width: 100%;
   border-radius: 4px;
