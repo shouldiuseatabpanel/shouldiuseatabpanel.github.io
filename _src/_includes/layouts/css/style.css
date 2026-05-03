@@ -1,4 +1,5 @@
 :root {
+    color-scheme: light dark;;
     --sans: Verdana, Arial, sans-serif;
     --backgroundcolor: #ffffff;
     --textcolor: #222222;
@@ -22,10 +23,9 @@
 body {
     color: var(--textcolor);
     font-family: var(--sans);
-    font-size: 16px;
     background-color: var(--backgroundcolor)
 }
-a, a:active, a:visited, a:focus, a:hover {
+:any-link {
     color: var(--highlight);
 }
 button {
@@ -33,8 +33,8 @@ button {
     color: var(--textcolor);
     font-family: var(--sans);
     font-size: 1rem;
-    border: 2px solid var(--highlight);
-    padding: 1px 4px;
+    border: 1px solid var(--highlight);
+    padding: 2px;
     border-radius: 4px;
     min-height: 24px;
 }
@@ -44,10 +44,6 @@ h1, h2, h3, h4, h5, h6 {
 :focus-visible {
     outline: 6px double var(--highlight);
     box-shadow: 0 0 0 5px var(--backgroundcolor);
-}
-.page-title {
-    color : var(--highlight);
-    font-size: 2rem;
 }
 header, footer {
     text-align: center;
