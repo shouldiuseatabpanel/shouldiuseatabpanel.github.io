@@ -5,3 +5,9 @@
 :host .spacer {
     flex: 1;
 }
+:host  [data-pn] {
+    padding: 0;
+    border: 0;
+    color: var(--highlight);
+    min-height: unset;
+}
